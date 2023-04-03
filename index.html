@@ -1,261 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Presentation Page</title>
-    <meta property="og:title" content="Presentation Page" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Open Sans;
-        font-size: 18px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.55;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <style>
-      html {
-      scroll-behavior: smooth;
-      }
-    </style>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div>
-      <link href="./home.css" rel="stylesheet" />
-
-      <div class="home-container">
-        <div data-role="Header" class="home-navbar-container">
-          <div class="home-navbar">
-            <div class="home-logo">
-              <img
-                alt="image"
-                src="public/playground_assets/default-img.svg"
-                class="home-image"
-              />
-            </div>
-            <div class="home-links-container">
-              <a href="#features" class="home-link Anchor">features</a>
-              <a href="#about-us" class="home-link1 Anchor">About Us</a>
-              <a href="#contact" class="home-link2 Anchor">contact</a>
-            </div>
-            <div class="home-cta-container">
-              <div data-role="BurgerMenu" class="home-burger-menu">
-                <svg viewBox="0 0 1024 1024" class="home-icon">
-                  <path
-                    d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div data-role="MobileMenu" class="home-mobile-menu">
-              <div class="home-top">
-                <img
-                  alt="image"
-                  src="public/playground_assets/default-img.svg"
-                  class="home-image1"
-                />
-                <div data-role="CloseMobileMenu" class="home-container1">
-                  <svg viewBox="0 0 1024 1024" class="home-icon02">
-                    <path
-                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="home-mid">
-                <div class="home-links-container1">
-                  <a href="#features" class="home-link3 Anchor">features</a>
-                  <span class="home-link4 Anchor">services</span>
-                  <a href="#about-us" class="home-link5 Anchor">About Us</a>
-                  <a href="#contact" class="home-link6 Anchor">contact</a>
-                </div>
-                <button class="home-cta-btn Anchor button">
-                  sTART BUILDING
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="RoadVisor, an augmented reality navigation application providing real-time traffic information and enhancing driving experience." />
+        <meta name="author" content="RoadVisor Team" />
+        <title>RoadVisor: Your trusted companion on the road</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><span style="color:#fed136; font-family: Roboto; font-weight: bold; font-size: 24px; margin-left: 10px;">RoadVisor</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
                 </button>
-              </div>
-              <div class="home-bot">
-                <div class="home-social-links-container">
-                  <svg viewBox="0 0 950.8571428571428 1024" class="home-icon04">
-                    <path
-                      d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                    ></path></svg
-                  ><svg
-                    viewBox="0 0 877.7142857142857 1024"
-                    class="home-icon06"
-                  >
-                    <path
-                      d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"
-                    ></path></svg
-                  ><svg
-                    viewBox="0 0 877.7142857142857 1024"
-                    class="home-icon08"
-                  >
-                    <path
-                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                    ></path>
-                  </svg>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reports">Reports</a></li>
+                    </ul>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="home-hero">
-          <div class="home-hero-text-container">
-            <h1 class="home-heading">RoadVisor</h1>
-            <span class="home-text">Easing the burden of drivers...</span>
-          </div>
-          <ul>
-            <li>Ammaar Iftikhar</li>
-            <li>Arda Icoz</li>
-            <li>Onur Vural</li> 
-            <li>Berke Emin Ay</li>
-            <li>Faruk Ulutas</li> 
-          </ul>
-          <img
-            alt="pastedImage"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/9b5e5a9f-16de-4a1f-9b97-cfdfca6c5e7d/eca8f938-c95d-42ee-8229-da1e94c18c8d?org_if_sml=1397104"
-          />
-        </div>
-        <div class="home-section-separator"></div>
-        <div id="features" class="home-features">
-          <div class="home-heading-container">
-            <h2 class="home-text01">
-              <span class="Section-Heading">Augmented Reality&nbsp;</span>
-              <br />
-              <span>Based&nbsp;</span>
-              <br />
-              <span>Navigation&nbsp;</span>
-            </h2>
-          </div>
-          <div class="home-cards-container">
-            <div class="home-feature-card">
-              <span class="home-heading1">
-                <span class="Card-Heading"><a href="T2317_Project_Specification_Document.pdf">Report 1</a></span>
-                <br />
-              </span>
-              <img
-                alt="pastedImage"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/9b5e5a9f-16de-4a1f-9b97-cfdfca6c5e7d/b0e0c606-7505-47da-8f1b-b3d41355abac?org_if_sml=111009"
-              />
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome to RoadVisor!</div>
+                <div class="masthead-heading text-uppercase">Smart AR Navigation</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#introduction">Discover More</a>
             </div>
-            <div class="home-feature-card1">
-              <span class="home-heading2">
-                <span class="Card-Heading"><a href="analysis-report.pdf">Report 2</a></span>
-                <br />
-              </span>
-              <img
-                alt="pastedImage"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/9b5e5a9f-16de-4a1f-9b97-cfdfca6c5e7d/e7792fe8-0f11-4eb0-a3ac-2a62cacc43cc?org_if_sml=111009"
-              />
+        </header>
+        <!-- Brief Introduction-->
+        <section class="page-section bg-light" id="introduction">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Brief Introduction to RoadVisor</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <p class="large text-muted">RoadVisor is an innovative augmented reality navigation application designed to enhance your driving experience. By combining real-time traffic information with advanced computer vision techniques, RoadVisor aims to provide a safer, more efficient, and enjoyable journey for drivers. Discover how our cutting-edge technology can improve your time on the road and make driving a pleasure.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div id="about-us" class="home-about-us">
-          <div class="home-heading-container1">
-            <h2 class="home-text11 Section-Heading">
-              What's the story behind our product?
-            </h2>
-          </div>
-          <div class="home-text-container">
-            <span class="home-text12">
-              <span class="home-text13">
-                Navigation in unknown areas is a difficulty faced by
-                automobilists. The automobilist may be an experienced taxi
-                driver or a novice. Navigators don’t only face the hurdle of
-                driving through unknown streets, but also face the task of
-                keeping track of road information like traffic lights and street
-                signs simultaneously. The presence of so much information for
-                the driver to process might lead to increased mistakes or
-                accidents. There are other issues that pertain to the road, like
-                boundaries and crowd density, that play a crucial role to inform
-                the driver. If a greater amount of information is present to the
-                driver with more ease, the driver will be able to perform
-                better.
-              </span>
-              <br class="home-text14" />
-              <span class="home-text15">
-                While there are many applications that attempt to present the
-                driver with directions to the destination, there aren’t many
-                that help simultaneously inform the driver of other necessary
-                information simultaneously. These applications mostly focus on
-                delivering the queried information to the driver like the
-                location of certain places and distance to the next turn.
-                Information about processing real-time information for the
-                navigator on the road is not prioritized by advanced
-                applications like Google Maps. Our application attempts to fill
-                the disparity between the user view and the application.
-                RoadVisor assists the drivers in real-time using Machine
-                Learning and Augmented Reality.
-              </span>
-              <br class="Section-Text" />
-            </span>
-          </div>
-          <button class="home-cta-btn1 button Anchor">START BUILDING</button>
-        </div>
-        <div class="home-section-separator1"></div>
-        <div id="contact" class="home-contact">
-          <div class="home-content-container">
-            <h2 class="home-text17 Section-Heading">
-              This is where to find us
-            </h2>
-            <div class="home-locations-container">
-              <div class="home-location-1">
-                <span class="home-heading3">
-                  <span>Bilkent University</span>
-                  <br />
-                  <span>Ankara</span>
-                  <br />
-                  <span>TR</span>
-                </span>
-              </div>
+        </section>
+        <!-- Features-->
+        <section class="page-section" id="features">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Features</h2>
+                    <h3 class="section-subheading text-muted">Enhance your driving experience with RoadVisor's cutting-edge technology.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <img class="img-fluid mx-auto mb-3" src="assets/img/features/ar-navigation.jpg" alt="Augmented Reality Navigation" />
+                        <h4 class="my-3">Augmented Reality Navigation</h4>
+                        <p class="text-muted">RoadVisor provides an AR-based navigation system that overlays directions on the real-time camera view, making it easier for drivers to follow the route and stay focused on the road.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img class="img-fluid mx-auto mb-3" src="assets/img/features/traffic-detection.jpeg" alt="Traffic Light & Sign Detection" />
+                        <h4 class="my-3">Traffic Light & Sign Detection</h4>
+                        <p class="text-muted">RoadVisor detects traffic lights and signs in real-time, providing drivers with important information about the road ahead, ensuring they remain aware and compliant with traffic regulations.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img class="img-fluid mx-auto mb-3" src="assets/img/features/pedestrian-detection.jpeg" alt="Pedestrian Detection" />
+                        <h4 class="my-3">Pedestrian Detection</h4>
+                        <p class="text-muted">RoadVisor uses advanced computer vision techniques to detect pedestrians in the camera view, helping drivers stay aware of their surroundings and prevent accidents.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img class="img-fluid mx-auto mb-3" src="assets/img/features/emergency-assistance.jpg" alt="Driving Analytics & Feedback" />
+                        <h4 class="my-3">Emergency Assistance</h4>
+                        <p class="text-muted">RoadVisor enables users to quickly send SOS messages to designated contacts in case of emergencies or accidents.</p>
+                    </div>
+                </div>
             </div>
-            <div class="home-social-links-container1">
-              <svg viewBox="0 0 950.8571428571428 1024" class="home-icon10">
-                <path
-                  d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                ></path></svg
-              ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon12">
-                <path
-                  d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"
-                ></path></svg
-              ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon14">
-                <path
-                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                ></path>
-              </svg>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Meet The Team</h2>
+                    <h3 class="section-subheading text-muted">Our motivated group of enthusiastic computer engineering students.</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <!-- a -->
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpeg" alt="Ahmet Faruk Ulutaş" />
+                            <h4>Ahmet Faruk Ulutaş</h4>
+                            <p class="text-muted">Full-stack Development & AR & ML</p>
+                            <a href="https://www.linkedin.com/in/farukulutas/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <!-- b -->
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpeg" alt="Arda İçöz" />
+                            <h4>Arda İçöz</h4>
+                            <p class="text-muted">Frontend Development & AR</p>
+                            <a href="https://www.linkedin.com/in/arda-icoz/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <!-- c -->
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpeg" alt="Ammaar Iftikhar" />
+                            <h4>Ammaar Iftikhar</h4>
+                            <p class="text-muted">Machine Learning</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <!-- d -->
+                            <img class="mx-auto rounded-circle" src="assets/img/team/4.jpeg" alt="Nurettin Onur Vural" />
+                            <h4>Nurettin Onur Vural</h4>
+                            <p class="text-muted">Frontend Development & ML</p>
+                            <a href="https://www.linkedin.com/in/onur-vural-696706220/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <!-- e -->
+                            <img class="mx-auto rounded-circle" src="assets/img/team/5.jpeg" alt="Emin Berke Ay" />
+                            <h4>Emin Berke Ay</h4>
+                            <p class="text-muted">Frontend Development</p>
+                            <a href="https://www.linkedin.com/in/emin-berke-ay/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <p class="large text-muted">Our team comprises dedicated computer engineering students with diverse skills and knowledge, collaborating on this capstone project to develop innovative solutions for safer and more efficient driving experiences.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="home-location-2"></div>
+        </section>
+        <!-- Reports -->
+        <div class="py-5" id=reports>
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Reports</h2>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <i class="fas fa-file-alt fa-4x"></i>
+                        <h4 class="my-3">Project Specification Report</h4>
+                        <a href="assets/reports/T2317_Project_Specification_Document.pdf" class="btn btn-primary" download>Download</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <i class="fas fa-file-alt fa-4x"></i>
+                        <h4 class="my-3">Analysis and Requirement Report</h4>
+                        <a href="assets/reports/T2317_Analysis_Requirements_Report.pdf" class="btn btn-primary" download>Download</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <i class="fas fa-file-alt fa-4x"></i>
+                        <h4 class="my-3">Detailed Design Report</h4>
+                        <a href="assets/reports/T2317_Detail_Design_Document.pdf" class="btn btn-primary" download>Download</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <i class="fas fa-file-alt fa-4x"></i>
+                        <h4 class="my-3">Final Report</h4>
+                        <a href="assets/reports/report1.pdf" class="btn btn-primary" download>Download</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  </body>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 text-center">Copyright &copy; RoadVisor 2023</div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
